@@ -19,7 +19,7 @@
     <meta name="twitter:description" content="NottsJS is a meetup for developers and anyone else interested in development. We meet every 2nd Tuesday of the month to talk about Node, Javascript, Full Stack development in the Nottingham area." />
     <meta name="twitter:url" content="https://www.nottsjs.org">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
     <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
     <style media="screen">
       .logo {
@@ -140,7 +140,7 @@
           <h4>Sponsored by</h4>
           <div class="col s-12 m4 offset-m2">
             <a href="https://www.wearejh.com/" target="_blank">
-              <img src="img/jhlogo.png" height="100">
+              <img src="img/jhlogo.png" width="100">
             </a>
           </div>
           <div class="col s-12 m4">
@@ -150,17 +150,47 @@
           </div>
         </div>
         <div class="row center">
+          <a href="https://www.mozilla.org/" target="_blank" class="row">
+            <img src="img/mozilla-wordmark.svg" height="72">
+          </a>
+
+          <a class="row btn-large waves-effect waves-light white-text modal-trigger" style="background: rgb(193, 56, 50) none repeat scroll 0% 0%; height: auto; line-height: 1.8; text-decoration: none; padding: 4px;" href="#scholarship-fund-modal">Scholarship program</a>
+        </div>
+        <div class="row center">
           <p>Would you like to sponsor us? <a class="black-text" href="mailto:contact@nottsjs.org">contact@nottsjs.org</a></p>
         </div>
       </div>
     </div>
+
+    <div id="scholarship-fund-modal" class="modal">
+      <div class="modal-content">
+        <h4>Mozilla scholarship fund</h4>
+        <p>
+          Mozilla is committed to building an open web community where everyone can participate.
+        </p>
+        <p>
+          The scholarship fund is Mozilla's way of helping us fund travel for participants from under represented groups to speak at the event.
+        </p>
+        <p>
+          If you want to speak at our events but feel you need help getting here <a href="mailto:contact@nottsjs.org?Subject=Scholarship+talk">send us an email</a>.
+        </p>
+
+        <p>
+          As a reminder we have a <a href="/codeofconduct.html">CoC</a> at the event and we take it seriously. We also follow <a href="https://www.mozilla.org/en-US/about/governance/policies/participation/">Mozilla's participation guidelines</a> and if you feel more comfortable you can email them with any issue that arises at the event.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <a href="mailto:contact@nottsjs.org?Subject=Scholarship+talk" class=" modal-action modal-close waves-effect waves-green btn-flat">Talk at NottsJS</a>
+      </div>
+    </div>
+
 
     <footer class=" blue-grey darken-2">
       <div class="container">
         <div class="row last">
           <div class="col s12">
             <br>
-            <p class="grey-text text-lighten-4 center">NottsJS is a meetup for developers and anyone else interested in development. We meet every 2nd Tuesday of the month to talk about Node, Javascript, Full Stack development in the Nottingham area.</p>
+            <p class="grey-text text-lighten-4 center">NottsJS is a meetup for developers and anyone else interested in development. We meet every 2nd Tuesday of the month to talk about Node, JavaScript, Full Stack development in the Nottingham area.</p>
             <br>
           </div>
           <div class="col s6 m4 offset-m3">
@@ -203,7 +233,11 @@
         </div>
       </div>
     </footer>
-
+    <script
+      src="https://code.jquery.com/jquery-2.2.3.min.js"
+      integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -213,6 +247,10 @@
       ga('create', 'UA-71872925-1', 'auto');
       ga('send', 'pageview');
     </script>
-
+    <script>
+      $(document).ready(function(){
+        $('.modal-trigger').leanModal();
+      });
+    </script>
   </body>
 </html>
