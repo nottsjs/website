@@ -34,14 +34,18 @@ hr {
   margin-bottom: auto;
 }
 .speakers .pics {
+  text-align: center;
   min-height: 200px;
   justify-items: space-around;
 }
-.speakers .pics img {
-  max-width: 100%;
+.speakers .pics .col {
+  flex-flow: column;
+}
+.speakers .pics .col a {
+  color: black;
 }
 .speakers .pics .col img {
-	margin: auto;
+  margin: auto;
   width: 100%;
   max-width: 200px;
   max-height: 200px;
