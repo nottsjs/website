@@ -20,25 +20,8 @@
     <meta name="twitter:url" content="https://www.nottsjs.org">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+    <link rel="stylesheet" href="lib/style.css">
     <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
-    <style media="screen">
-      .logo {
-        display: block;
-        margin: 0 auto 3em auto;
-        width: 8em;
-      }
-      hr {
-        border: 0;
-        height: 1px;
-        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-      }
-      .section a {
-        text-decoration: underline;
-      }
-      .last {
-        margin-bottom: 0;
-      }
-    </style>
   </head>
 
   <body>
@@ -62,18 +45,17 @@
 
     <div class="section">
       <div class="container">
+        <h4 class="center">Speakers</h4>
+
         <div class="row speakers">
-          <h4 class="center">Speakers</h4>
-
-          <div class="col s-12 m4 offset-m2 center">
-            <div>
-              <h5><a href="https://twitter.com/ajbkr" class="black-text">Andrew J. Baker</a> and <a href="https://github.com/kristianroebuck" class="black-text">Kristian Roebuck</a></h5>
-              <h5>React and Redux from the Trenches</h5>
-              <div class="row">
-                <img class="circle responsive-img col s6 m6 center" src="https://avatars0.githubusercontent.com/u/565578?v=3&s=460">
-                <img class="circle responsive-img col s6 m6 center" src="https://avatars0.githubusercontent.com/u/474377?v=3&s=460">
-              </div>
-
+          <div class="col talk">
+            <h5>React and Redux from the Trenches</h5>
+            <div class="row pics">
+              <div class="col"><img class="circle responsive-img" src="https://avatars0.githubusercontent.com/u/565578?v=3&amp;s=460"></div>
+              <div class="col"><img class="circle responsive-img" src="https://avatars0.githubusercontent.com/u/474377?v=3&amp;s=460"></div>
+            </div>
+            <h5><a href="https://twitter.com/ajbkr" class="black-text">Andrew J. Baker</a> and <a href="https://github.com/kristianroebuck" class="black-text">Kristian Roebuck</a></h5>
+            <div class="desc">
               <p>Lessons learned from working with React and Redux for the past 6 months to create an asynchronous, isomorphic, server-side rendered SPA complete with RESTful API powered by Python/Django.</p>
 
               <p>Essentially: dos, don'ts, gotchas, best practice approaches, red herrings, false starts, and evolving practices.</p>
@@ -82,11 +64,13 @@
             </div>
           </div>
 
-          <div class="col s-12 m4 offset-m2 center">
-            <div>
-              <h5><a href="https://twitter.com/TatumCreative" class="black-text">Greg Tatum</a></h5>
-              <h5>The Web as a Creative Medium</h5>
-              <img class="circle responsive-img" width="200" src="https://avatars0.githubusercontent.com/u/1588648?v=3&s=460">
+          <div class="col talk">
+            <h5>The Web as a Creative Medium</h5>
+            <div class="row pics">
+              <div class="col"><img class="circle responsive-img" src="https://avatars0.githubusercontent.com/u/1588648?v=3&amp;s=460"></div>
+            </div>
+            <h5><a href="https://twitter.com/TatumCreative" class="black-text">Greg Tatum</a></h5>
+            <div class="desc">
               <p>Have a fireside chat with Greg Tatum about how to use the web as a creative medium. Learn how to quickly iterate on ideas in a flexible space, and instantly share your work with the globe at large. Explore the underlying technologies like 2d canvas, WebGL, and SVG, plus the frameworks that make it easy to be productive.</p>
             </div>
           </div>
@@ -94,6 +78,7 @@
         </div>
       </div>
     </div>
+
 
     <hr>
 
