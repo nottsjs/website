@@ -50,6 +50,9 @@ hr {
   max-width: 200px;
   max-height: 200px;
 }
+.speakers .talk h5 {
+  text-align: center;
+}
 
 @media (max-width: 1400px) {
   .speakers {
