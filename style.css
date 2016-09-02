@@ -12,3 +12,11 @@ svg.logo {
 .top-button {
   margin: 5px;
 }
+
+.valign-middle {
+  vertical-align: middle;
+}
+
+address {
+  font-style: normal;
+}
