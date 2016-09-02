@@ -1,24 +1,14 @@
-/*.logo {
-  display: block;
-  margin: 0 auto 3em auto;
-  width: 8em;
-}
-
 hr {
   border: 0;
   height: 1px;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
-.section a {
-  text-decoration: underline;
-}
-
-.last {
-  margin-bottom: 0;
-}*/
-
 svg.logo {
   width:40px;
   height:40px
+}
+
+.top-button {
+  margin: 5px;
 }
