@@ -5,8 +5,13 @@ hr {
 }
 
 svg.logo {
-  width:40px;
-  height:40px
+  width: 40px;
+  height: 40px
+}
+
+svg.logo-small {
+  width: 20px;
+  height: 20px
 }
 
 .top-button {
@@ -19,4 +24,9 @@ svg.logo {
 
 address {
   font-style: normal;
+}
+
+.scholarship-program-btn {
+  line-height: 1.8;
+  text-decoration: none;
 }
