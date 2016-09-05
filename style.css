@@ -27,6 +27,7 @@ address {
 }
 
 .scholarship-program-btn {
-  line-height: 1.8;
+  line-height: 2em;
+  height: auto;
   text-decoration: none;
 }
