@@ -31,3 +31,15 @@ address {
   height: auto;
   text-decoration: none;
 }
+
+.sponsor-images img {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .sponsor-images img {
+    padding-top: inherit;
+    padding-bottom: inherit;
+  }
+}
