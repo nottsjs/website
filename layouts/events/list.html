@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{{ .Site.Title }}</title>
+    {{ partial "head.html" . }}
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m4 l3 center-align">
+          {{ partial "left_content.html" . }}
+        </div>
+
+        <div class="col s12 m8 l9 left-align">
+          {{ range .Pages }}
+          {{ partial "event.html" . }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+
+    {{ partial "declaration.html" . }}
+    {{ partial "help_out.html" . }}
+    {{ partial "mozilla_modal.html" . }}
+    {{ partial "footer.html" . }}
+    {{ partial "scripts.html" . }}
+  </body>
+</html>
