@@ -1,5 +1,5 @@
 ---
-title: Securing your site sike it's 1999
+title: Securing your site like it's 1999
 type: event
 date: 2019-02-12
 starttime: 18:00
