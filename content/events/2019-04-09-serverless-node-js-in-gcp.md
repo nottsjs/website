@@ -12,6 +12,8 @@ presenter_bio: |
 github_url: https://github.com/dgonzalez
 twitter_url: https://twitter.com/dagonzago
 meetup_url: https://www.meetup.com/NottsJS/events/qhnpfqyzgbmb/
+aliases:
+  - events/2020-04-09-serverless-node-js-in-gcp/
 ---
 
 > This talk will be given remotely.
