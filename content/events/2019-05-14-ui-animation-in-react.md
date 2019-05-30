@@ -4,9 +4,9 @@ type: event
 date: 2019-05-14
 starttime: 18:00
 endtime: 20:00
-presenter: David Gonzalez
+presenter: Donovan Hutchinson
 presenter_url: https://hop.ie
-presenter_img: https://avatars3.githubusercontent.com/u/853536?v=4
+presenter_img: https://github.com/donovanh.png
 presenter_bio: |
   Donovan Hutchinson has been creating web pages and apps for clients for over 20 years. He writes and builds CSS animation tutorials on [CSSAnimation.rocks](https://cssanimation.rocks), and has been published in Net Magazine, Smashing Magazine, Adobe Inspire, Modern Web and more.
 
