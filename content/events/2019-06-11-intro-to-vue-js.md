@@ -1,5 +1,5 @@
 ---
-title: Intro to Vuew.js
+title: Intro to Vue.js
 type: event
 date: 2019-06-11
 starttime: 18:00
