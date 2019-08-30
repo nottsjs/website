@@ -4,6 +4,7 @@ type: event
 date: 2019-09-10
 starttime: 18:00
 endtime: 21:00
+meetup_url: https://www.meetup.com/NottsJS/events/mcrkhryzmbnb/
 ---
 
 This month in NottsJS we'll have **Lightning Talks**!
