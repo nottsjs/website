@@ -10,7 +10,7 @@ presenter_img: https://github.com/ersel.png
 presenter_bio: |
   Ersel Aker is a full-stack developer based in Manchester, UK. He has been working with FinTech and SaaS startups using Python, Nodejs and React. He is the author of [Spotify terminal client library](https://github.com/ersel/spotify-cli-mac) and contributor to various open source projects. He organizes [Microservices Manchester meetup](http://microservicesmanchester.com/) quarterly and teaches JavaScript at a local part-time coding bootcamp.
 github_url: https://github.com/ersel
-twitter_url: https://twitter.com/freezydorito
+twitter_url: https://twitter.com/erselaker
 meetup_url: https://www.meetup.com/NottsJS/events/vjnvhryznblb/
 ---
 
