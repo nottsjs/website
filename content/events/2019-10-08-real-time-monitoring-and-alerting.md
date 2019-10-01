@@ -1,5 +1,5 @@
 ---
-title: 'Next Frontier in Front-end Development: Real-time monitoring and alerting'
+title: "Next Frontier in Front-end Development & Hacktoberfest Workshop"
 type: event
 date: 2019-10-08
 starttime: 18:00
@@ -19,3 +19,11 @@ Do you know if your last deployment slowed page load times or increased error ra
 In this talk, Ersel will share the learnings from integrating a react based single page application with Elasticsearch at [BrightHR](https://www.brighthr.com/), an award winning SaaS solution operating in UK, Canada and Australia.
 
 You'll learn how metrics such as page load, asset download, network call times and errors can be captured to monitor the health and performance of your front-end in real-time.
+
+But wait, there's more!
+
+To celebrate [Hacktoberfest](https://hacktoberfest.digitalocean.com/), FOSS community superheroes [Anna](https://twitter.com/anna_hax) and [Jamie](https://twitter.com/jamietanna) will give a short talk and run a workshop to get everyone contributing to open source! Here's a little bit about their session:
+
+In a noble effort to bring more people into the open source community, every October anyone can participate in Hacktoberfest. All you need to do is contribute to an open source project and you could get a free t-shirt as well as the pride that comes with being a part of something bigger.
+
+In this session we’ll introduce you to Hacktoberfest and open source, talk about how to get involved and then lead a workshop where people can get started making contributions. Bring your laptop along if you can!
