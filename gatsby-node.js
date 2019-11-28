@@ -7,9 +7,12 @@
 // You can delete this file if you're not using it
 
 const path = require(`path`)
+
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
+
   const blogPostTemplate = path.resolve(`src/templates/blog-template.jsx`)
+
   const result = await graphql(`
     {
       allMarkdownRemark(
@@ -26,11 +29,13 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       }
     }
   `)
+
   // Handle errors
   if (result.errors) {
     reporter.panicOnBuild(`Error while running GraphQL query.`)
     return
   }
+
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
       path: node.frontmatter.path,
