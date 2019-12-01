@@ -1,6 +1,6 @@
 ---
 path: /events/2019-10-08-real-time-monitoring-and-alerting/
-title: "Next Frontier in Front-end Development & Hacktoberfest Workshop"
+title: 'Next Frontier in Front-end Development & Hacktoberfest Workshop'
 type: event
 date: 2019-10-08
 starttime: 18:00

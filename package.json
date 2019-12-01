@@ -42,5 +42,14 @@
   },
   "bugs": {
     "url": "https://github.com/nottsjs/website/issues"
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "semi": false,
+    "singleQuote": true,
+    "jsxSingleQuote": true,
+    "jsxBracketSameLine": false,
+    "arrowParens": "always"
   }
 }

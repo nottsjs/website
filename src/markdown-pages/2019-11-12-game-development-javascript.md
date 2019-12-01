@@ -1,6 +1,6 @@
 ---
 path: /events/2019-11-12-game-development-javascript/
-title: "Game Development with JavaScript"
+title: 'Game Development with JavaScript'
 type: event
 date: 2019-11-12
 starttime: 18:00
