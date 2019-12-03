@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `NottsJS `,
+    description: `NottsJS is a meetup for developers and anyone else interested in development. We meet every 2nd Tuesday of the month to talk about Node, JavaScript and Full Stack development in the Nottingham area.`,
+    author: `@nottsjs`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -18,8 +18,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `NottsJS`,
+        short_name: `NottsJS`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
