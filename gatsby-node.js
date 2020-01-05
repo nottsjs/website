@@ -37,6 +37,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   }
 
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    if (!node.frontmatter.path) return
     createPage({
       path: node.frontmatter.path,
       component: eventsTemplate,
@@ -50,9 +51,6 @@ const remarkHTML = require('remark-html')
 
 exports.onCreateNode = ({ node, actions: { createNodeField } }) => {
   if (!node.frontmatter) return
-
-  console.log('====================================== NODE HAS FRONTMATTER ====================================')
-  console.log(JSON.stringify(node.frontmatter))
 
   const { presenter_bio } = node.frontmatter
   if (presenter_bio) {
