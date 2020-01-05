@@ -25,7 +25,7 @@ export default function EventCard({ event: { html, path, date, title, start, mee
         {presenter &&
           <>
             <hr />
-            <Profile presenter={presenter} />
+            <Profile {...presenter} />
           </>}
       </div>
     </div>

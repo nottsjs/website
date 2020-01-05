@@ -5,9 +5,9 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import EventCard from '../components/event-card'
 
-const transformPresenter = ({ presenter, presenter_bio, presenter_img, presenter_url, github_url, twitter_url }) => ({
+const transformPresenter = ({ presenter, presenter_img, presenter_url, github_url, twitter_url }, presenter_bio_html) => ({
   name: presenter,
-  bio: presenter_bio,
+  bio: presenter_bio_html,
   img: presenter_img,
   url: presenter_url,
   githubUrl: github_url,
@@ -20,6 +20,9 @@ const transformEvent = ({
     date, path, title, start, meetup_url,
     startTime, endTime,
     ...otherFields
+  },
+  fields: {
+    presenter_bio_html
   }
 }) => ({
   html,
@@ -30,7 +33,7 @@ const transformEvent = ({
   startTime,
   endTime,
   meetupUrl: meetup_url,
-  presenter: transformPresenter(otherFields)
+  presenter: transformPresenter(otherFields, presenter_bio_html)
 })
 
 export default function IndexPage ({ data }) {
@@ -81,6 +84,9 @@ export const query = graphql`
             presenter_url
             github_url
             twitter_url
+          }
+          fields {
+            presenter_bio_html
           }
         }
       }

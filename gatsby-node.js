@@ -44,3 +44,26 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     })
   })
 }
+
+const remark = require('remark')
+const remarkHTML = require('remark-html')
+
+exports.onCreateNode = ({ node, actions: { createNodeField } }) => {
+  if (!node.frontmatter) return
+
+  console.log('====================================== NODE HAS FRONTMATTER ====================================')
+  console.log(JSON.stringify(node.frontmatter))
+
+  const { presenter_bio } = node.frontmatter
+  if (presenter_bio) {
+    const markdown = remark()
+      .use(remarkHTML)
+      .processSync(presenter_bio)
+      .toString()
+    createNodeField({
+      name: `presenter_bio_html`,
+      node,
+      value: markdown
+    });
+  }
+}
