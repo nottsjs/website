@@ -6,9 +6,10 @@ start: 2019-03-12T18:00:00Z
 end: 2019-03-12T20:00:00Z
 presenter: Edd Wilson
 presenter_url: https://www.impression.co.uk/
-presenter_img: https://avatars1.githubusercontent.com/u/45422275
+presenter_img: https://github.com/templarwilson.png
 presenter_bio: |
   Edd is a SEO specialist from Nottingham. He has 9 years experience in helping websites succeed organic search and has been working for Impression (an award winning agency) for 4 years. Outside of SEO, you'll find Edd producing music, eating ramen and listening to podcasts.
+github_url: https://github.com/templarwilson
 twitter_url: https://twitter.com/eddjtw
 meetup_url: https://www.meetup.com/NottsJS/events/qhnpfqyzfbqb/
 ---

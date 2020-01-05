@@ -14,8 +14,8 @@ export default function PastEventsPage ({ data }) {
       <SEO title='Home' />
       <div className="row">
         <div className="col s12">
-          <h3 class="header">Past events</h3>
-          <h5 class="header"><Link to="/">View next event</Link></h5>
+          <h3 className="header">Past events</h3>
+          <h5 className="header"><Link to="/">View next event</Link></h5>
         </div>
       </div>
 

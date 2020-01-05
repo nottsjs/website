@@ -6,7 +6,7 @@ start: 2016-11-08T18:30:00Z
 end: 2016-11-08T21:00:00Z
 ---
 
-> "You're using <insert_old_framework>?  That's so 2015.  You need to use <insert_new_framework>!"<br />- _Javascript Developers_
+> "You're using <insert\_old\_framework>?  That's so 2015.  You need to use <insert\_new\_framework>!"<br />- _Javascript Developers_
 
 With something that is approaching attention deficit disorder there's new
 JavaScript frameworks emerging weekly.  Even the godfather of modern JS
