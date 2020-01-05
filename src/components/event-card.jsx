@@ -1,14 +1,16 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { Link } from 'gatsby'
 import Profile from './profile'
 
-export default function EventCard({ event: { html, date, title, start, meetupUrl, presenter } }) {
+import './event-card.css'
+
+export default function EventCard({ event: { html, path, date, title, start, meetupUrl, presenter }, disableTitleLink }) {
   const eventIsInThePast = (new Date(start)).valueOf() < Date.now().valueOf()
   return (
     <div className="row">
     <div className="col s12">
       <div className="card-panel talk">
-        <h3 className="header light"><a href="{{ .Permalink | relURL }}">{title}</a></h3>
+        <h3 className="header light">{disableTitleLink ? title : <Link to={path}>{title}</Link>}</h3>
         <h6 className="light">{date}</h6>
 
         {meetupUrl &&

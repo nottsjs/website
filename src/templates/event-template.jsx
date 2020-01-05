@@ -1,5 +1,8 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
+
+import Layout from '../components/layout'
+import SEO from '../components/seo'
 import EventCard from '../components/event-card'
 
 const transformPresenter = ({ presenter, presenter_bio, presenter_img, presenter_url }) => ({
@@ -27,7 +30,19 @@ const transformEvent = ({
 
 export default function EventTemplate({ data }) {
   const event = transformEvent(data.markdownRemark)
-  return <EventCard data={event} />
+  return (
+    <Layout>
+      <SEO title={event.title} />
+
+      <div className="row">
+        <div className="col s12">
+          <h5 className="header"><Link to="/">View next event</Link></h5>
+        </div>
+      </div>
+
+      <EventCard event={event} disableTitleLink={true} />
+    </Layout>
+  )
 }
 
 export const pageQuery = graphql`

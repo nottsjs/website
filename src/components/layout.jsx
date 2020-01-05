@@ -9,7 +9,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
 
-import Header from './header'
+// import Header from './header'
+import LeftContent from '../components/left-content'
+import Declaration from '../components/declaration'
+import HelpOut from '../components/help-out'
+import Footer from '../components/footer'
+import Scripts from '../components/scripts'
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -26,7 +31,24 @@ const Layout = ({ children }) => {
     <>
       {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
       <div>
-        <main>{children}</main>
+        <main>
+          <div className="container">
+            <div className="row">
+              <div className="col s12 m4 l3 center-align">
+                <LeftContent />
+              </div>
+
+              <div className="col s12 m8 l9 left-align">
+                {children}
+              </div>
+            </div>
+          </div>
+
+          <Declaration />
+          <HelpOut />
+          <Footer />
+          <Scripts />
+        </main>
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}

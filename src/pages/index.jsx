@@ -1,13 +1,8 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import LeftContent from '../components/left-content'
-import Declaration from '../components/declaration'
-import HelpOut from '../components/help-out'
-import Footer from '../components/footer'
-import Scripts from '../components/scripts'
 import EventCard from '../components/event-card'
 
 const transformPresenter = ({ presenter, presenter_bio, presenter_img, presenter_url, github_url, twitter_url }) => ({
@@ -43,35 +38,20 @@ export default function IndexPage ({ data }) {
   return (
     <Layout>
       <SEO title='Home' />
-      <div className="container">
-        <div className="row">
-          <div className="col s12 m4 l3 center-align">
-            <LeftContent />
-          </div>
-
-          <div className="col s12 m8 l9 left-align">
-            <div className="row">
-              <div className="col s12">
-                <h3 className="header">Next event: {event.date}</h3>
-                <h5 className="header light">{event.startTime} to {event.endTime}</h5>
-              </div>
-            </div>
-
-            <EventCard event={event} />
-
-            <div className="row">
-              <div className="col s12">
-                <h5 className="header"><a href="past.html">View past events</a></h5>
-              </div>
-            </div>
-          </div>
+      <div className="row">
+        <div className="col s12">
+          <h3 className="header">Next event: {event.date}</h3>
+          <h5 className="header light">{event.startTime} to {event.endTime}</h5>
         </div>
       </div>
 
-      <Declaration />
-      <HelpOut />
-      <Footer />
-      <Scripts />
+      <EventCard event={event} />
+
+      <div className="row">
+        <div className="col s12">
+          <h5 className="header"><Link to='/past'>View past events</Link></h5>
+        </div>
+      </div>
     </Layout>
   )
 }
