@@ -5,31 +5,7 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import EventCard from '../components/event-card'
 
-const transformPresenter = ({ presenter, presenter_bio, presenter_img, presenter_url }, presenter_bio_html) => ({
-  name: presenter,
-  bio: presenter_bio_html,
-  img: presenter_img,
-  url: presenter_url
-})
-
-const transformEvent = ({
-  html,
-  frontmatter: {
-    date, path, title, start, meetup_url: meetupUrl,
-    ...otherFields
-  },
-  fields: {
-    presenter_bio_html
-  }
-}) => ({
-  html,
-  date,
-  path,
-  title,
-  start,
-  meetupUrl,
-  presenter: transformPresenter(otherFields, presenter_bio_html)
-})
+import { transformEvent } from '../utils/transforms'
 
 export default function EventTemplate({ data }) {
   const event = transformEvent(data.markdownRemark)

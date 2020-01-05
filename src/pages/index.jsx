@@ -5,36 +5,7 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import EventCard from '../components/event-card'
 
-const transformPresenter = ({ presenter, presenter_img, presenter_url, github_url, twitter_url }, presenter_bio_html) => ({
-  name: presenter,
-  bio: presenter_bio_html,
-  img: presenter_img,
-  url: presenter_url,
-  githubUrl: github_url,
-  twitterUrl: twitter_url
-})
-
-const transformEvent = ({
-  html,
-  frontmatter: {
-    date, path, title, start, meetup_url,
-    startTime, endTime,
-    ...otherFields
-  },
-  fields: {
-    presenter_bio_html
-  }
-}) => ({
-  html,
-  date,
-  path,
-  title,
-  start,
-  startTime,
-  endTime,
-  meetupUrl: meetup_url,
-  presenter: transformPresenter(otherFields, presenter_bio_html)
-})
+import { transformEvent } from '../utils/transforms'
 
 export default function IndexPage ({ data }) {
   const event = transformEvent(data.allMarkdownRemark.edges[0].node)
