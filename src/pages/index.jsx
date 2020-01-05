@@ -10,9 +10,36 @@ import Footer from '../components/footer'
 import Scripts from '../components/scripts'
 import EventCard from '../components/event-card'
 
+const transformPresenter = ({ presenter, presenter_bio, presenter_img, presenter_url, github_url, twitter_url }) => ({
+  name: presenter,
+  bio: presenter_bio,
+  img: presenter_img,
+  url: presenter_url,
+  githubUrl: github_url,
+  twitterUrl: twitter_url
+})
+
+const transformEvent = ({
+  html,
+  frontmatter: {
+    date, path, title, start, meetup_url,
+    startTime, endTime,
+    ...otherFields
+  }
+}) => ({
+  html,
+  date,
+  path,
+  title,
+  start,
+  startTime,
+  endTime,
+  meetupUrl: meetup_url,
+  presenter: transformPresenter(otherFields)
+})
+
 export default function IndexPage ({ data }) {
-  const { html, frontmatter} = data.allMarkdownRemark.edges[0].node
-  const { title, date, start, startTime, endTime, meetup_url: meetupUrl, presenter } = frontmatter
+  const event = transformEvent(data.allMarkdownRemark.edges[0].node)
   return (
     <Layout>
       <SEO title='Home' />
@@ -25,12 +52,12 @@ export default function IndexPage ({ data }) {
           <div className="col s12 m8 l9 left-align">
             <div className="row">
               <div className="col s12">
-                <h3 className="header">Next event: {date}</h3>
-                <h5 className="header light">{startTime} to {endTime}</h5>
+                <h3 className="header">Next event: {event.date}</h3>
+                <h5 className="header light">{event.startTime} to {event.endTime}</h5>
               </div>
             </div>
 
-            <EventCard event={{ title, date, start, html, meetupUrl, presenter }} />
+            <EventCard event={event} />
 
             <div className="row">
               <div className="col s12">
@@ -46,17 +73,6 @@ export default function IndexPage ({ data }) {
       <Footer />
       <Scripts />
     </Layout>
-
-  // <Layout>
-  //   <SEO title='Home' />
-  //   <h1>Hi people</h1>
-  //   <p>Welcome to your new Gatsby site.</p>
-  //   <p>Now go build something great.</p>
-  //   <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-  //     <Image />
-  //   </div>
-  //   <Link to='/page-2/'>Go to page 2</Link>
-  // </Layout>
   )
 }
 
@@ -83,6 +99,8 @@ export const query = graphql`
             presenter_bio
             presenter_img
             presenter_url
+            github_url
+            twitter_url
           }
         }
       }

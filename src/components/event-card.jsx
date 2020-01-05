@@ -2,8 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Profile from './profile'
 
-export default function EventCard({ event }) {
-  const { html, date, title, start, meetupUrl, presenter } = event
+export default function EventCard({ event: { html, date, title, start, meetupUrl, presenter } }) {
   const eventIsInThePast = (new Date(start)).valueOf() < Date.now().valueOf()
   return (
     <div className="row">
