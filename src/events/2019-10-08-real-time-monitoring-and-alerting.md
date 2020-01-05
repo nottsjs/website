@@ -2,9 +2,8 @@
 path: /events/2019-10-08-real-time-monitoring-and-alerting/
 title: 'Next Frontier in Front-end Development & Hacktoberfest Workshop'
 type: event
-date: 2019-10-08
-starttime: 18:00
-endtime: 21:00
+start: 2019-10-08T18:00:00+01:00
+end: 2019-10-08T21:00:00+01:00
 presenter: Ersel Aker
 presenter_url: http://erselaker.com/
 presenter_img: https://github.com/ersel.png

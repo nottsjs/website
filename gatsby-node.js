@@ -11,12 +11,12 @@ const path = require(`path`)
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
 
-  const blogPostTemplate = path.resolve(`src/templates/blog-template.jsx`)
+  const eventsTemplate = path.resolve(`src/templates/event-template.jsx`)
 
   const result = await graphql(`
     {
       allMarkdownRemark(
-        sort: { order: DESC, fields: [frontmatter___date] }
+        sort: { order: DESC, fields: [frontmatter___start] }
         limit: 1000
       ) {
         edges {
@@ -39,8 +39,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
       path: node.frontmatter.path,
-      component: blogPostTemplate,
-      context: {}, // additional data can be passed via context
+      component: eventsTemplate,
+      context: { event: true }, // additional data can be passed via context
     })
   })
 }

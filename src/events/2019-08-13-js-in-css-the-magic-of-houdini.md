@@ -2,9 +2,8 @@
 path: /events/2019-08-13-js-in-css-the-magic-of-houdini/
 title: JS in CSS, the magic of Houdini
 type: event
-date: 2019-08-13
-starttime: 18:00
-endtime: 20:00
+start: 2019-08-13T18:00:00+01:00
+end: 2019-08-13T20:00:00+01:00
 presenter: Laura Gonzalez
 presenter_url: https://www.lauragonzalez.cc/
 presenter_img: https://github.com/walaura.png

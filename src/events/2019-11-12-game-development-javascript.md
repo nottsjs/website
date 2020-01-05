@@ -2,9 +2,8 @@
 path: /events/2019-11-12-game-development-javascript/
 title: 'Game Development with JavaScript'
 type: event
-date: 2019-11-12
-starttime: 18:00
-endtime: 21:00
+start: 2019-11-12T18:00:00Z
+end: 2019-11-12T21:00:00Z
 presenter: Katie Walker
 presenter_url: https://kat.codes/
 presenter_img: https://github.com/katiew812.png

@@ -2,9 +2,8 @@
 path: /events/2019-09-10-lightning-talks/
 title: ⚡️Lightning Talks!⚡️
 type: event
-date: 2019-09-10
-starttime: 18:00
-endtime: 21:00
+start: 2019-09-10T18:00:00+01:00
+end: 2019-09-10T21:00:00+01:00
 meetup_url: https://www.meetup.com/NottsJS/events/mcrkhryzmbnb/
 ---
 
