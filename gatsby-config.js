@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: process.env.BASE_PATH,
   siteMetadata: {
     title: `NottsJS `,
     description: `NottsJS is a meetup for developers and anyone else interested in development. We meet every 2nd Tuesday of the month to talk about Node, JavaScript and Full Stack development in the Nottingham area.`,
