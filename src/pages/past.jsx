@@ -11,7 +11,7 @@ export default function PastEventsPage ({ data }) {
   const events = data.allMarkdownRemark.edges.map(({ node }) => transformEvent(node))
   return (
     <Layout>
-      <SEO title='Home' />
+      <SEO title='Past Events' />
       <div className="row">
         <div className="col s12">
           <h3 className="header">Past events</h3>

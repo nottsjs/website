@@ -37,8 +37,8 @@ address {
   margin-bottom: 10px;
 }
 
-.row .last {
-    margin-bottom: 0;
+.row.last {
+  margin-bottom: 0;
 }
 
 @media only screen and (max-width: 600px) {

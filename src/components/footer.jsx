@@ -60,6 +60,13 @@ const Footer = () => (
             </li>
           </ul>
         </div>
+        <div className="col s12">
+          <p className="grey-text text-lighten-4 center">
+          © {new Date().getFullYear()}, Built with
+          {` `}
+          <a href='https://www.gatsbyjs.org'>Gatsby</a>
+          </p>
+        </div>
       </div>
     </div>
   </footer>

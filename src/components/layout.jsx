@@ -28,34 +28,24 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
-      {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
-      <div>
-        <main>
-          <div className="container">
-            <div className="row">
-              <div className="col s12 m4 l3 center-align">
-                <LeftContent />
-              </div>
-
-              <div className="col s12 m8 l9 left-align">
-                {children}
-              </div>
-            </div>
+    <main>
+      <div className="container">
+        <div className="row">
+          <div className="col s12 m4 l3 center-align">
+            <LeftContent />
           </div>
 
-          <Declaration />
-          <HelpOut />
-          <Footer />
-          <Scripts />
-        </main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href='https://www.gatsbyjs.org'>Gatsby</a>
-        </footer>
+          <div className="col s12 m8 l9 left-align">
+            {children}
+          </div>
+        </div>
       </div>
-    </>
+
+      <Declaration />
+      <HelpOut />
+      <Footer />
+      <Scripts />
+    </main>
   )
 }
 
