@@ -13,7 +13,7 @@ const Scripts = () => (
 
       gtag('config', 'UA-2195173-7');`}}>
     </script>
-    <script dangerouslySetInnerHTML={{__html: `
+    {/* <script dangerouslySetInnerHTML={{__html: `
       $(document).ready(function(){
         $('.modal-trigger').leanModal();
       });`}}>
@@ -48,7 +48,7 @@ const Scripts = () => (
           window.location.href = '/events/' + hash;
         }
       })`}}>
-    </script>
+    </script> */}
   </>
 )
 

@@ -6,7 +6,7 @@ const Profile = ({ name, bio, img, url, githubUrl, twitterUrl }) => (
       <div className="row">
         <div className="col s8 offset-s2">
           <div className="avatar">
-            <img src={img} alt={`${name} Picture`} className="circle responsive-img" />
+            <img src={img} alt={`${name} Picture`} className="circle responsive-img" crossorigin="anonymous" />
           </div>
         </div>
       </div>
