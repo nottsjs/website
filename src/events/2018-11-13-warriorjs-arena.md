@@ -18,7 +18,7 @@ meetup_url: https://www.meetup.com/NottsJS/events/qhnpfqyxpbrb/
 
 ### Bring your laptop!
 
-<img src="../img/warriorjs-logo.svg" alt="WarriorJS Logo" class="responsive-img" style="background-color: rgb(32, 35, 42); padding: 20px;" />
+<img src="./img/warriorjs-logo.svg" alt="WarriorJS Logo" class="responsive-img" style="background-color: rgb(32, 35, 42); padding: 20px;" />
 
 This month we will be running a fun and collaborative practical session with
 [WarriorJS](https://warrior.js.org/).
