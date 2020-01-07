@@ -19,7 +19,7 @@ This month we're going for something completely new.  Enter The Cool Wall.  A
 segment that will prove so popular that Jeremy Clarkson will invent Time Travel
 to steal it from us and make into a popular segment on Top Gear.
 
-<img src="/img/cool-wall.jpg" class="responsive-img" />
+<img src="../img/cool-wall.jpg" class="responsive-img" />
 
 This month's session will be a group discussion piece where we talk about the
 state of modern JavaScript development and our place in this world.

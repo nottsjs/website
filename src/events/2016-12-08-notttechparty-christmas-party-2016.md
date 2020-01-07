@@ -6,9 +6,7 @@ start: 2016-12-08T19:00:00Z
 end: 2016-12-08T22:30:00Z
 ---
 
-<img class="responsive-img"
-src="https://a248.e.akamai.net/secure.meetupstatic.com/photos/event/9/b/d/8/600_455919896.jpeg"
-/>
+<img class="responsive-img" src="https://a248.e.akamai.net/secure.meetupstatic.com/photos/event/9/b/d/8/600_455919896.jpeg" />
 
 Nottingham's biggest and brightest tech events are coming together to celebrate
 the stellar growth of the community by throwing another awesome Christmas party.
