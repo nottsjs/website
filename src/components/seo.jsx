@@ -73,6 +73,7 @@ function SEO({ description, lang, meta, title }) {
     >
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css"></link>
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"></link>
+      <script src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
     </Helmet>
   )
 }
