@@ -7,7 +7,7 @@ const NearformLogo = ({ className }) => {
     query {
       placeholderImage: file(relativePath: { eq: "nflogo.png" }) {
         childImageSharp {
-          fluid(maxWidth: 240) {
+          fluid(maxWidth: 192) {
             ...GatsbyImageSharpFluid
           }
         }

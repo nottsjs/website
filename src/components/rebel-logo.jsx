@@ -7,7 +7,7 @@ const RebelLogo = ({ className }) => {
     query {
       placeholderImage: file(relativePath: { eq: "rebel-logo.png" }) {
         childImageSharp {
-          fluid(maxWidth: 240) {
+          fluid(maxWidth: 192) {
             ...GatsbyImageSharpFluid
           }
         }

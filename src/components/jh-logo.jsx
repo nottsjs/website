@@ -7,7 +7,7 @@ const JHLogo = ({ className }) => {
     query {
       placeholderImage: file(relativePath: { eq: "jhlogo.png" }) {
         childImageSharp {
-          fluid(maxWidth: 240) {
+          fluid(maxWidth: 138) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -15,7 +15,7 @@ const JHLogo = ({ className }) => {
     }
   `)
 
-  return <Img className={className} fluid={data.placeholderImage.childImageSharp.fluid} />
+  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
 }
 
 export default JHLogo

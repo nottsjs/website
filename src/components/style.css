@@ -32,9 +32,9 @@ address {
   text-decoration: none;
 }
 
-.sponsor-images img {
-  padding-top: 10px;
-  padding-bottom: 10px;
+.sponsor-images > div {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .row .last {
