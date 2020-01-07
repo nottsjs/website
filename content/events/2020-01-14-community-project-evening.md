@@ -18,7 +18,7 @@ Happy new year, NottsJS friends! 🥂🍾
 
 Our community has many skills, and with many skills comes a huge variety of possibilities of things we can make together!
 
-To kick off the new year, we'll have a hands on session with our very own Dave! 🙂
+To kick off the new year, we'll have a hands-on session with our very own Dave! 🙂
 
 He'll be running a practical session in which we'll create a temperature monitoring system using an Espruino and some JavaScript.
 
