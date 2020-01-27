@@ -13,7 +13,7 @@ presenter_bio: |
 
     She is easily bribed with coffee & loves hearing about other people’s experiences.
 
-    <----------------------------------->
+    ---
 
     Moreton is a Principal Engineer at The Ministry of Justice. Outside of his day job he is a Director and Co-organiser of DDD East Midlands, occasional speaker, volunteer, and event attendee. He has enjoyed his experiences meeting the challenging needs of the rapidly growing businesses he has worked with whilst keeping his teams engaged and motivated. 
 
