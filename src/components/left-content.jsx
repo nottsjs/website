@@ -24,13 +24,13 @@ const LeftContent = () => (
 
     <div className="row sponsor-images">
       <div className="col s3 offset-s2 m6 offset-m3">
-        <a href="https://www.wearejh.com/" target="_blank"><JHLogo className="responsive-img" /></a>
+        <a href="https://www.wearejh.com/" target="_blank" rel="noopener noreferrer"><JHLogo className="responsive-img" /></a>
       </div>
       <div className="col s5 m8 offset-m2">
-        <a href="https://rebelrecruiters.co.uk/" target="_blank"><RebelLogo className="responsive-img" /></a>
+        <a href="https://rebelrecruiters.co.uk/" target="_blank" rel="noopener noreferrer"><RebelLogo className="responsive-img" /></a>
       </div>
       <div className="col s4 offset-s4 m8 offset-m2">
-        <a href="https://www.nearform.com/" target="_blank"><NearformLogo className="responsive-img" /></a>
+        <a href="https://www.nearform.com/" target="_blank" rel="noopener noreferrer"><NearformLogo className="responsive-img" /></a>
       </div>
     </div>
 
