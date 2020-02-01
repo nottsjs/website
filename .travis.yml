@@ -16,4 +16,4 @@ deploy:
   email: david.p.wood+travis-deploy@gmail.com
   name: Travis Deploy Bot
   on:
-    branch: master
+    branch: hugo-build
