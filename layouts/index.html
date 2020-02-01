@@ -13,7 +13,7 @@
         </div>
 
         <div class="col s12 m8 l9 left-align">
-          {{ range first 1 .Pages }}
+          {{ range first 1 .Site.RegularPages }}
           <div class="row">
             <div class="col s12">
               <h3 class="header">Next event: {{ .Date.Format "Monday, January 2, 2006" }}</h3>
