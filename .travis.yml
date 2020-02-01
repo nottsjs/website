@@ -1,0 +1,19 @@
+install:
+  - wget -O /tmp/hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.52/hugo_0.52_Linux-64bit.deb
+  - sudo dpkg -i /tmp/hugo.deb
+
+dist: trusty
+sudo: false
+
+script: hugo
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep_history: true
+  local_dir: docs
+  email: david.p.wood+travis-deploy@gmail.com
+  name: Travis Deploy Bot
+  on:
+    branch: master
