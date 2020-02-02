@@ -1,9 +1,10 @@
+os: linux
+dist: trusty
+
 language: node_js
+
 node_js:
   - 'lts/erbium'
-
-dist: trusty
-sudo: false
 
 before_script:
   - npm i -g gatsby-cli
@@ -13,9 +14,9 @@ script: gatsby build --prefix-paths
 deploy:
   provider: pages
   skip_cleanup: true
-  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   keep_history: true
-  local_dir: public
+  local_dir: docs
   email: david.p.wood+travis-deploy@gmail.com
   name: Travis Deploy Bot
   on:
