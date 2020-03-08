@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
 const Footer = () => (
   <footer className=" blue-grey darken-2">
@@ -16,7 +17,7 @@ const Footer = () => (
             <li><a className="white-text" href="mailto:contact@nottsjs.org?subject=NottsJS+Contact">Contact</a></li>
             <li><a className="white-text" href="https://eepurl.com/bvVtwb">Newsletter</a></li>
             <li><a className="white-text" href="https://github.com/nottsjs/speakers">Submit a Talk</a></li>
-            <li><a className="white-text" href="/codeofconduct.html">Code of Conduct</a></li>
+            <li><Link className="white-text" to="/codeofconduct">Code of Conduct</Link></li>
           </ul>
         </div>
         <div className="col s6 m4">
