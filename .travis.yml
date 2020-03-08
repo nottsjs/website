@@ -16,7 +16,7 @@ deploy:
   skip_cleanup: true
   token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   keep_history: true
-  local_dir: docs
+  local_dir: public
   fqdn: nottsjs.org
   email: david.p.wood+travis-deploy@gmail.com
   name: Travis Deploy Bot
