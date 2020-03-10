@@ -14,7 +14,7 @@ meetup_url: https://www.meetup.com/NottsJS/events/vjnvhrybcfbnb/
 
 # ⚠️ EVENT CANCELLED ⚠️
 
-Due to the COVID-19 (coronovirus) situation we have been forced to cancel this event.
+Due to the COVID-19 (coronavirus) situation we have been forced to cancel this event.
 
 Please accept our sincerest apologies for both the inconvenience and the late notice. We will be back in April! 🎉
 
