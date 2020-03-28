@@ -12,7 +12,7 @@ twitter_url: https://twitter.com/mr_goodwin
 meetup_url: https://www.meetup.com/NottsJS/events/vjnvhrybcfbnb/
 ---
 
-# ⚠️ EVENT CANCELLED ⚠️
+## ⚠️ EVENT CANCELLED ⚠️
 
 Due to the COVID-19 (coronavirus) situation we have been forced to cancel this event.
 
