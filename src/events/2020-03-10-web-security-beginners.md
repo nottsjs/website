@@ -12,6 +12,14 @@ twitter_url: https://twitter.com/mr_goodwin
 meetup_url: https://www.meetup.com/NottsJS/events/vjnvhrybcfbnb/
 ---
 
+# ⚠️ EVENT CANCELLED ⚠️
+
+Due to the COVID-19 (coronavirus) situation we have been forced to cancel this event.
+
+Please accept our sincerest apologies for both the inconvenience and the late notice. We will be back in April! 🎉
+
+---
+
 This month we have a great security themed event lined up! There'll be two great talks from Mark Goodwin and Samuel King.
 
 ---
