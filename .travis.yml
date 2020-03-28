@@ -1,20 +1,22 @@
 os: linux
 dist: trusty
 
-language: shell
+language: node_js
 
-install:
-  - wget -O /tmp/hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.63.2/hugo_0.63.2_Linux-64bit.deb
-  - sudo dpkg -i /tmp/hugo.deb
+node_js:
+  - 'lts/erbium'
 
-script: hugo
+before_script:
+  - npm i -g gatsby-cli
+
+script: gatsby build --prefix-paths
 
 deploy:
   provider: pages
   skip_cleanup: true
   token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   keep_history: true
-  local_dir: docs
+  local_dir: public
   fqdn: nottsjs.org
   email: david.p.wood+travis-deploy@gmail.com
   name: Travis Deploy Bot
