@@ -21,7 +21,7 @@ We have two great talks lined up for April!
 ---
 
 #### 🎤 Web Security for Complete Beginners (and other people)
-_by Mark Goodwin_
+_by **Mark Goodwin**_
 
 This talk covers the basics of Web Security at a level suitable for web developers with little or no previous knowledge of security.
 
@@ -32,6 +32,6 @@ This talk will also include some useful perspectives for folk who perhaps alread
 ---
 
 #### 🎤 How not to get pwned by XSS
-_Samuel King_
+_by **Samuel King**_
 
 Along with a talk, we will be looking to gather community input of what interests you and how NottsJS can support you! Look forward to the return of the infamous "Cool Wall" and more!
