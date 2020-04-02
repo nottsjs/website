@@ -8,7 +8,7 @@ import EventCard from '../components/event-card'
 import { transformEvent } from '../utils/transforms'
 
 export default function PastEventsPage ({ data }) {
-  const events = data.allMarkdownRemark.edges.map(({ node }) => transformEvent(node))
+  const events = data.allMarkdownRemark.nodes.map(node  => transformEvent(node))
   return (
     <Layout>
       <SEO title='Past Events' />
@@ -37,28 +37,26 @@ export const query = graphql`
       filter: { frontmatter: { end: { ne: null } } }
       sort: { fields: [frontmatter___end], order: DESC }
     ) {
-      edges {
-        node {
-          html
-          frontmatter {
-            path
-            date: start(formatString: "dddd, MMMM Do, YYYY")
-            title
-            start
-            startTime: start(formatString: "HH:mm")
-            end
-            endTime: end(formatString: "HH:mm")
-            meetup_url
-            presenter
-            presenter_bio
-            presenter_img
-            presenter_url
-            github_url
-            twitter_url
-          }
-          fields {
-            presenter_bio_html
-          }
+      nodes {
+        html
+        frontmatter {
+          path
+          date: start(formatString: "dddd, MMMM Do, YYYY")
+          title
+          start
+          startTime: start(formatString: "HH:mm")
+          end
+          endTime: end(formatString: "HH:mm")
+          meetup_url
+          presenter
+          presenter_bio
+          presenter_img
+          presenter_url
+          github_url
+          twitter_url
+        }
+        fields {
+          presenter_bio_html
         }
       }
     }
