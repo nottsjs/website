@@ -34,4 +34,8 @@ This talk will also include some useful perspectives for folk who perhaps alread
 #### 🎤 How not to get pwned by XSS
 _by **Samuel King**_
 
-Along with a talk, we will be looking to gather community input of what interests you and how NottsJS can support you! Look forward to the return of the infamous "Cool Wall" and more!
+In this talk we will be looking at Cross Site Scripting and how to avoid getting owned by it!
+Sam will be covering a variety of different XSS exploits, How to detect them using ZAP and then how Content Security Policy can be used to prevent XSS attacks.
+---
+Sam is a second-year Computer Science Student at the University of Nottingham and is presenting his first tech talk as an 'apprentice' to Mark Goodwin.
+Sam has been actively involved in the Nottingham tech community since he arrived here just a year ago working with HackSoc Nottingham to put on guest speaker events.
