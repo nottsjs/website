@@ -30,12 +30,9 @@ export const pageQuery = graphql`
       html
       frontmatter {
         path
-        date: start(formatString: "dddd, MMMM Do, YYYY")
         title
         start
-        startTime: start(formatString: "HH:mm")
         end
-        endTime: end(formatString: "HH:mm")
         meetup_url
         presenter
         presenter_bio
