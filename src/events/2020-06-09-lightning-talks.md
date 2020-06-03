@@ -4,7 +4,7 @@ title: ⚡️Lightning Talks!⚡️
 type: event
 start: 2020-06-09T18:30:00+01:00
 end: 2020-06-09T20:00:00+01:00
-meetup_url: https://www.meetup.com/NottsJS/events/vjnvhrybchbqb/
+meetup_url: https://www.meetup.com/NottsJS/events/vjnvhrybcjbmb/
 
 ---
 
