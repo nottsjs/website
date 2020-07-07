@@ -2,8 +2,8 @@
 path: /events/2020-07-14-one-two-three-fastify/
 title: One, two, three... Fastify!
 type: event
-start: 2020-07-14T18:30:00+01:00
-end: 2020-07-14T20:00:00+01:00
+start: 2020-07-14T18:00:00+01:00
+end: 2020-07-14T19:00:00+01:00
 meetup_url: https://www.meetup.com/NottsJS/events/vjnvhrybckbsb/
 presenter: Matteo Collina
 presenter_img: https://github.com/mcollina.png
